@@ -1,0 +1,11 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9900\viewh7800\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs22 \cf0 Circuit simulation of the 8-channel multiplexor aisle controller.\
+\
+We use the circuit.jar Java-based simulator from {\field{\*\fldinst{HYPERLINK "http://www.falstad.com/circuit/"}}{\fldrslt http://www.falstad.com/circuit/}}\
+\
+The circuit.sim.multiplexor.counter file contains an 8-pulse clock counter.  The idea is that after eight shifts of the data from the outbound SSI we get a single outbound clock pulse that happens on the high-low transition of the 8th cycle on the SSI.  This gives the shift register time to latch-up the eight channel values on the output before we send our new clock pulse to the 8 channels for the controller.}
