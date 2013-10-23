@@ -1,0 +1,37 @@
+[Eagle]
+Version="05 08 00"
+Platform="Mac OS X"
+Serial="6C0180584A-LSR-WLM-1CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE/lbr/SparkFun.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/battery.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/buzzer.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/frames.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/ftdichip.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/led.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/memory-micron.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/national-semiconductor.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/optocoupler.lbr"
+UsedLibrary="/Applications/EAGLE/lbr/transistor-npn.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/con-usb-3.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/rcl.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/ref-packages.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/supply1.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/supply2.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/v-reg-micrel.lbr"
+UsedLibrary="/Applications/eagle-m11-eng-4.16r2/lbr/xbee_r1.lbr"
+UsedLibrary="/Users/jeffw/Documents/eagle/GW-devices.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 22 1439 873"
+State=1
+Number=0
+
+[Desktop]
+Screen="1440 900"
+Window="Win_1"
