@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/jeffw/Documents/eagle/Codeshelf-0007.v1/Codeshelf-0007.v1.r2.brd
+Job           : /Users/jeffw/Documents/Codeshelf/Engineering/CAD/Codeshelf-0007/Codeshelf-0007.v02.brd
 
-Start at      : 17:45:03 (9/25/13)
-End at        : 17:49:44 (9/25/13)
-Elapsed time  : 00:04:41
+Start at      : 20:17:52 (11/1/13)
+End at        : 20:21:03 (11/1/13)
+Elapsed time  : 00:03:11
 
-Signals       :    48   RoutingGrid: 1.9685 mil  Layers: 2
-Connections   :    85   predefined:  22 ( 2 Vias )
+Signals       :    47   RoutingGrid: 1.9685 mil  Layers: 2
+Connections   :    82   predefined:  23 ( 5 Vias )
 
-Router memory :   9795904
+Router memory :   9010208
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:29  00:01:01  00:01:01  00:01:00  00:01:10
-Number of Ripups  :         0         0         0         0         0
-max. Level        :         0         0         0         0         0
-max. Total        :         0         0         0         0         0
+Time per pass     :  00:00:24  00:00:41  00:00:42  00:00:39  00:00:45
+Number of Ripups  :         3         0         0         0         0
+max. Level        :         1         0         0         0         0
+max. Total        :         1         0         0         0         0
 
-Routed            :        63        63        63        63        63
-Vias              :        45        28        29        30        27
+Routed            :        59        59        59        59        59
+Vias              :        45        25        24        24        23
 Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 100.0% finished
+Final             : 97.6% finished. Polygons may have fallen apart.

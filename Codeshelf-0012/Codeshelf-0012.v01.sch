@@ -4461,7 +4461,11 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <attribute name="MFGN" value="Murata"/>
 <attribute name="MFGP" value="GRM155R61A104KA01D"/>
 </part>
-<part name="R1" library="GW-devices" deviceset="RF-R" device="0402" value="100K"/>
+<part name="R1" library="GW-devices" deviceset="RF-R" device="0402" value="100K">
+<attribute name="MFGN" value="Pansonic"/>
+<attribute name="MFGP" value="ERJ-2GEJ104X"/>
+<attribute name="PRICE" value="0.10"/>
+</part>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="C6" library="GW-devices" deviceset="RF-C" device="0402" value="1nF">
 <attribute name="MFGN" value="Murata"/>
@@ -4551,7 +4555,11 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <attribute name="MFGN" x="-96.52" y="43.18" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="-96.52" y="43.18" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R1" gate="G$1" x="40.64" y="27.94" rot="R90"/>
+<instance part="R1" gate="G$1" x="40.64" y="27.94" rot="R90">
+<attribute name="MFGN" x="40.64" y="27.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MFGP" x="40.64" y="27.94" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="PRICE" x="40.64" y="27.94" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="+3V4" gate="G$1" x="40.64" y="43.18"/>
 <instance part="C6" gate="G$1" x="40.64" y="10.16">
 <attribute name="MFGN" x="40.64" y="10.16" size="1.778" layer="96" display="off"/>
