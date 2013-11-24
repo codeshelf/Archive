@@ -12107,7 +12107,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="C8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="2">
 <segment>
 <wire x1="231.14" y1="5.08" x2="231.14" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="5.08" x2="236.22" y2="5.08" width="0.1524" layer="91"/>
@@ -12661,7 +12661,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="+5V" class="2">
 <segment>
 <wire x1="434.34" y1="-99.06" x2="436.88" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="436.88" y1="-99.06" x2="436.88" y2="-104.14" width="0.1524" layer="91"/>
