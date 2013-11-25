@@ -128,7 +128,7 @@
 <wire x1="150" y1="90.5" x2="150.1" y2="90.5" width="0" layer="20"/>
 <wire x1="150" y1="5" x2="150" y2="18.5" width="0" layer="20"/>
 <wire x1="150" y1="18.5" x2="150.1" y2="18.5" width="0" layer="20"/>
-<text x="114.5" y="7.1" size="1.778" layer="21">CS-0005.v02</text>
+<text x="148.2" y="49.5" size="1.778" layer="21" rot="R90">CS0005.2013.11.24.n1</text>
 <text x="45.6" y="78.1" size="1.778" layer="21" font="vector" rot="R90">GND</text>
 <text x="56.2" y="77.9" size="1.778" layer="21" font="vector" rot="R90">PWR</text>
 <rectangle x1="0" y1="38" x2="10" y2="72" layer="41"/>
