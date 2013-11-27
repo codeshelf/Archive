@@ -432,9 +432,9 @@ void GeneratePartList(void)
   int NumLines = 0;
 
 //XXX column sequence?
-  Lines[NumLines++] = tr("Part\tValue\tDevice\tPackage\tDescription\tMfgName\tMfgPartNum\tMfgPrice\tNotes\tVerified") + DatabaseHeader();
+  Lines[NumLines++] = tr("Part\tValue\tDevice\tPackage\tDescription\tMfgName\tMfgPartNum\tMfgPrice\tVerified\tNotes") + DatabaseHeader();
   for (int i = 0; i < NumParts; i++) {
-      Lines[NumLines] = PartName[i] + "\t" + PartValue[i] + "\t" + PartDevice[i] + "\t" + PartPackage[i] + "\t" + PartHeadline[i] + "\t" + MfgName[i] + "\t" + MfgPartNum[i] + "\t" + MfgPrice[i] + "\t" + Notes[i] + "\t" + Verified[i];
+      Lines[NumLines] = PartName[i] + "\t" + PartValue[i] + "\t" + PartDevice[i] + "\t" + PartPackage[i] + "\t" + PartHeadline[i] + "\t" + MfgName[i] + "\t" + MfgPartNum[i] + "\t" + MfgPrice[i] + "\t" + Verified[i] + "\t" + Notes[i];
       if (Database[0]) {
          string key = DatabaseKey(i);
          for (int f = 0; DatabaseFields[f]; f++)
@@ -452,7 +452,7 @@ void GenerateValueList(void)
   int Index[];
 
 //XXX column sequence?
-  Lines[NumLines++] = tr("Qty\tMfgPartNum\tMfgName\tMfgPrice\tValue\tDevice\tPackage\tParts") + DatabaseHeader();
+  Lines[NumLines++] = tr("Qty\tMfgPartNum\tMfgName\tMfgPrice\tValue\tDevice\tPackage\tNotes\tParts") + DatabaseHeader();
   sort(NumParts, Index, MfgPartNum, PartValue);
   for (int n1 = 0, n2 = 0; ++n2 <= NumParts; ) {
       int i1 = Index[n1];
@@ -464,7 +464,7 @@ void GenerateValueList(void)
          }
       string Quantity;
       sprintf(Quantity, "%d", n2 - n1);
-      Lines[NumLines] = Quantity + "\t" + MfgPartNum[i1] + "\t" + MfgName[i1] + "\t" + MfgPrice[i1] + "\t" + PartValue[i1] + "\t" + PartDevice[i1] + "\t" + PartPackage[i1] + "\t";
+      Lines[NumLines] = Quantity + "\t" + MfgPartNum[i1] + "\t" + MfgName[i1] + "\t" + MfgPrice[i1] + "\t" + PartValue[i1] + "\t" + PartDevice[i1] + "\t" + PartPackage[i1] + "\t" + Notes[i1] + "\t";
       for (;;) {
           Lines[NumLines] += PartName[i1];
           if (++n1 < n2) {

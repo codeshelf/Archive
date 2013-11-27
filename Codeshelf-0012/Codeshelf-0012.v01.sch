@@ -2185,7 +2185,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="C6" library="GW-devices" deviceset="RF-C" device="0402" value="1nF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM033R71C102KD01D"/>
+<attribute name="MFGP" value="GRM155R71C102KA01D"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C_R" library="GW-devices" deviceset="JUMPER-2X" device="-SMT-VIA"/>

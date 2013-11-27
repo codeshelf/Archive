@@ -7636,7 +7636,8 @@ MFG part number 54602-908lf</description>
 </part>
 <part name="C1" library="GW-devices" deviceset="RF-C" device="0402" value=".1uF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM033R61A104KE15D"/>
+<attribute name="MFGP" value="	
+GRM155R61C104KA88D"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -7695,7 +7696,8 @@ MFG part number 54602-908lf</description>
 </part>
 <part name="C2" library="GW-devices" deviceset="RF-C" device="0402" value=".1uF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM033R61A104KE15D"/>
+<attribute name="MFGP" value="	
+GRM155R61C104KA88D"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -7707,12 +7709,12 @@ MFG part number 54602-908lf</description>
 </part>
 <part name="R2" library="GW-devices" deviceset="RF-R" device="0402" value="10K">
 <attribute name="MFGN" value="Panasonic"/>
-<attribute name="MFGP" value="ERJ-2GEJ332X"/>
+<attribute name="MFGP" value="ERJ-2GEJ103X"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="R3" library="GW-devices" deviceset="RF-R" device="0402" value="10K">
 <attribute name="MFGN" value="Panasonic"/>
-<attribute name="MFGP" value="ERJ-2GEJ332X"/>
+<attribute name="MFGP" value="ERJ-2GEJ103X"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="SW-ACK" library="GW-devices" deviceset="SWITCH-TACTILE" device="-320.03E11"/>

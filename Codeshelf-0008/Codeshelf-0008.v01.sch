@@ -3616,18 +3616,22 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="D1" library="led" deviceset="LED" device="CHIP-LED0805" value="RED">
 <attribute name="MFGN" value="OSRAM"/>
 <attribute name="MFGP" value="Q62702P5182"/>
+<attribute name="NOTES" value="DNP"/>
 </part>
 <part name="D2" library="led" deviceset="LED" device="CHIP-LED0805" value="GREEN">
 <attribute name="MFGN" value="OSRAM"/>
 <attribute name="MFGP" value="Q65110P5179"/>
+<attribute name="NOTES" value="DNP"/>
 </part>
 <part name="R2" library="GW-devices" deviceset="RF-R" device="0402" value="220">
 <attribute name="MFGN" value="Panasonic"/>
 <attribute name="MFGP" value="ERJ-2GEJ224X"/>
+<attribute name="NOTES" value="DNP"/>
 </part>
 <part name="R3" library="GW-devices" deviceset="RF-R" device="0402" value="390">
 <attribute name="MFGN" value="Panasonic"/>
 <attribute name="MFGP" value="ERJ-2GEJ394X"/>
+<attribute name="NOTES" value="DNP"/>
 </part>
 <part name="C3" library="GW-devices" deviceset="RF-C" device="0603" value="100pF">
 <attribute name="MFGN" value="Murata"/>
@@ -3792,6 +3796,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="JF1" library="GW-devices" deviceset="JUMPER-2X" device="-SMT-VIA"/>
 <part name="JF2" library="GW-devices" deviceset="JUMPER-2X" device="-SMT-VIA"/>
+<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3825,18 +3830,22 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="D1" gate="G$1" x="-152.4" y="83.82" rot="R270">
 <attribute name="MFGN" x="-152.4" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MFGP" x="-152.4" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NOTES" x="-152.4" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="D2" gate="G$1" x="-152.4" y="76.2" rot="R270">
 <attribute name="MFGN" x="-152.4" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MFGP" x="-152.4" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="NOTES" x="-152.4" y="76.2" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="-167.64" y="83.82">
 <attribute name="MFGN" x="-167.64" y="83.82" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="-167.64" y="83.82" size="1.778" layer="96" display="off"/>
+<attribute name="NOTES" x="-167.64" y="83.82" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="-167.64" y="76.2">
 <attribute name="MFGN" x="-167.64" y="76.2" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="-167.64" y="76.2" size="1.778" layer="96" display="off"/>
+<attribute name="NOTES" x="-167.64" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="-165.1" y="-5.08" rot="R90">
 <attribute name="MFGN" x="-165.1" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
@@ -4001,6 +4010,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <instance part="GND10" gate="1" x="276.86" y="7.62"/>
 <instance part="JF1" gate="G$1" x="-167.64" y="35.56"/>
 <instance part="JF2" gate="G$1" x="-167.64" y="20.32"/>
+<instance part="+3V8" gate="G$1" x="-30.48" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -4276,7 +4286,7 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/74HC_H
 <pinref part="C9" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-30.48" y1="86.36" x2="-30.48" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="91.44" x2="-30.48" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 <segment>

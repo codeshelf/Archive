@@ -5271,6 +5271,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <hole x="-37.5" y="15.5" drill="3.2"/>
 <hole x="37.5" y="15.5" drill="3.2"/>
 <hole x="55.5" y="15.5" drill="3.2"/>
+<hole x="55.5" y="-39.5" drill="3.2"/>
 </package>
 <package name="LCD-16X2-SPARKFUN">
 <wire x1="-40" y1="18" x2="-40" y2="-18" width="0.127" layer="21"/>
@@ -6964,7 +6965,9 @@ Source MOTOROLA / ON Semiconductor mjd32-d.pdf</description>
 <devices>
 <device name="" package="CODESHELF-LOGO">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="NOTES" value="DNP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11314,11 +11317,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="J1" library="SparkFun" deviceset="M05X2" device="PTH"/>
 <part name="C1" library="GW-devices" deviceset="RF-C" device="0603" value="100pF">
-<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGN" value="Kemet"/>
 <attribute name="MFGP" value="C0603C101K5RACTU"/>
 </part>
 <part name="C2" library="GW-devices" deviceset="RF-C" device="0603" value="1nF">
-<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGN" value="Kemet"/>
 <attribute name="MFGP" value="C0603C102K4RACTU"/>
 </part>
 <part name="R1" library="GW-devices" deviceset="RF-R" device="0402" value="100K">
@@ -11346,11 +11349,11 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="NOTES" value="DNP"/>
 </part>
 <part name="C3" library="GW-devices" deviceset="RF-C" device="0603" value="100pF">
-<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGN" value="Kemet"/>
 <attribute name="MFGP" value="C0603C101K5RACTU"/>
 </part>
 <part name="C4" library="GW-devices" deviceset="RF-C" device="0603" value="100pF">
-<attribute name="MFGN" value="Murata"/>
+<attribute name="MFGN" value="Kemet"/>
 <attribute name="MFGP" value="C0603C101K5RACTU"/>
 </part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -11406,7 +11409,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PRICE" value="0.57"/>
 </part>
 <part name="LCD" library="GW-devices" deviceset="LCD-SPARKFUN" device="20X4" value="LCD-SPARKFUN"/>
-<part name="LED-ACTION" library="GW-devices" deviceset="LED5060" device="A"/>
+<part name="LED-ACTION" library="GW-devices" deviceset="LED5060" device="A">
+<attribute name="MFGN" value="BiVar"/>
+<attribute name="MFGP" value="SMP6-RGB"/>
+</part>
 <part name="U4" library="uln-udn" deviceset="ULN2003A" device="D">
 <attribute name="MFGN" value="TI"/>
 <attribute name="MFGP" value="ULN2003ADR"/>
@@ -11652,7 +11658,10 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="PRICE" x="172.72" y="-127" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LCD" gate="G$1" x="259.08" y="83.82"/>
-<instance part="LED-ACTION" gate="G$1" x="149.86" y="99.06" rot="R270"/>
+<instance part="LED-ACTION" gate="G$1" x="149.86" y="99.06" rot="R270">
+<attribute name="MFGN" x="149.86" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MFGP" x="149.86" y="99.06" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="U4" gate="A" x="114.3" y="129.54">
 <attribute name="MFGN" x="114.3" y="129.54" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="114.3" y="129.54" size="1.778" layer="96" display="off"/>
