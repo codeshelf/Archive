@@ -1,4 +1,4 @@
-Partlist exported from /Users/jeffw/Documents/Codeshelf/Engineering/CAD/Codeshelf-0012/Codeshelf-0012.v01.sch at 11/26/13 7:02 PM
+Partlist exported from /Users/jeffw/Documents/Codeshelf/Engineering/CAD/Codeshelf-0012/Codeshelf-0012.v01.sch at 11/26/13 8:44 PM
 
 Qty	MfgPartNum	MfgName	MfgPrice	Value	Device	Package	Notes	Parts	
 5				JUMPER-2X-SMT-VIA	JUMPER-2X-SMT-VIA	JUMPER-VIA-2X		C-E1, C_E2, C_R, F-E1, F-E2	
@@ -7,8 +7,8 @@ Qty	MfgPartNum	MfgName	MfgPrice	Value	Device	Package	Notes	Parts
 1	BLM18PG600SN1D	Murata		60?	RF-L0603	RF-L0603		L1	
 1	ERJ-2GEJ104X	Pansonic	0.10	100K	RF-R0402	RF-R0402		R1	
 1	FT232RL	FTDI		FT232RL	FT232RL	SSOP28		U2	
-1	GRM033R71C102KD01D	Murata		1nF	RF-C0402	C0402		C6	
 6	GRM155R61A104KA01D	Murata		0.1µF	RF-C0402	C0402		C3, C4, C5, C8, C10, C11	
+1	GRM155R71C102KA01D	Murata		1nF	RF-C0402	C0402		C6	
 1	GRM155R71E103KA01D	Murata		10nF	RF-C0402	C0402		C9	
 1	GRM219R61A475KE19D	Murata		4.7µF	RF-C0805	C0805		C7	
 2	GRM1555C1H150JZ01	Murata		15pF	RF-C0402	C0402		C1, C2	
