@@ -2146,11 +2146,11 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="GW-devices" deviceset="RF-C" device="0402" value="15pF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM1555C1H150JZ01"/>
+<attribute name="MFGP" value="GJM1555C1H150JB01D"/>
 </part>
 <part name="C2" library="GW-devices" deviceset="RF-C" device="0402" value="15pF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM1555C1H150JZ01"/>
+<attribute name="MFGP" value="GJM1555C1H150JB01D"/>
 </part>
 <part name="C3" library="GW-devices" deviceset="RF-C" device="0402" value="0.1µF">
 <attribute name="MFGN" value="Murata"/>
@@ -2195,7 +2195,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </part>
 <part name="C7" library="GW-devices" deviceset="RF-C" device="0805" value="4.7µF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="GRM219R61A475KE19D"/>
+<attribute name="MFGP" value="GRM219R61A475KE34J"/>
 </part>
 <part name="C8" library="GW-devices" deviceset="RF-C" device="0402" value="0.1µF">
 <attribute name="MFGN" value="Murata"/>

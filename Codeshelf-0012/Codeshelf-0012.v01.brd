@@ -5585,12 +5585,12 @@ design rules under a new name.</description>
 <element name="C1" library="GW-devices" package="C0402" value="15pF" x="29.5" y="47.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="30" y="49" size="1.27" layer="25" rot="R90"/>
 <attribute name="MFGN" value="Murata" x="29.5" y="47.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFGP" value="GRM1555C1H150JZ01" x="29.5" y="47.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFGP" value="GJM1555C1H150JB01D" x="29.5" y="47.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C2" library="GW-devices" package="C0402" value="15pF" x="28" y="47.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.5" y="49" size="1.27" layer="25" rot="R90"/>
 <attribute name="MFGN" value="Murata" x="28" y="47.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFGP" value="GRM1555C1H150JZ01" x="28" y="47.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFGP" value="GJM1555C1H150JB01D" x="28" y="47.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C3" library="GW-devices" package="C0402" value="0.1µF" x="22.49" y="32.12" smashed="yes">
 <attribute name="NAME" x="21.49" y="32.62" size="1.27" layer="25"/>
@@ -5646,7 +5646,7 @@ design rules under a new name.</description>
 <element name="C7" library="GW-devices" package="C0805" value="4.7µF" x="9" y="38" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.3" y="36.5" size="1.27" layer="25" rot="R270"/>
 <attribute name="MFGN" value="Murata" x="9" y="38" size="1.778" layer="27" display="off"/>
-<attribute name="MFGP" value="GRM219R61A475KE19D" x="9" y="38" size="1.778" layer="27" display="off"/>
+<attribute name="MFGP" value="GRM219R61A475KE34J" x="9" y="38" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C8" library="GW-devices" package="C0402" value="0.1µF" x="11" y="38.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.5" y="37.5" size="1.27" layer="25" rot="R270"/>
