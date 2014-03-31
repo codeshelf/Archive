@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -79,13 +80,31 @@
 <layer number="105" name="tPlate" color="14" fill="6" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="14" fill="3" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
@@ -111,6 +130,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -7613,6 +7634,46 @@ MFG part number 54602-908lf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="adafruit">
+<packages>
+<package name="FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FIDUCIAL_1MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7636,8 +7697,7 @@ MFG part number 54602-908lf</description>
 </part>
 <part name="C1" library="GW-devices" deviceset="RF-C" device="0402" value=".1uF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="	
-GRM155R61C104KA88D"/>
+<attribute name="MFGP" value="  GRM155R61C104KA88D"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -7696,8 +7756,7 @@ GRM155R61C104KA88D"/>
 </part>
 <part name="C2" library="GW-devices" deviceset="RF-C" device="0402" value=".1uF">
 <attribute name="MFGN" value="Murata"/>
-<attribute name="MFGP" value="	
-GRM155R61C104KA88D"/>
+<attribute name="MFGP" value="  GRM155R61C104KA88D"/>
 <attribute name="PRICE" value="0.02"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -7732,33 +7791,42 @@ GRM155R61C104KA88D"/>
 <part name="CASE" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
 <attribute name="MFGN" value="Bud Industries"/>
 <attribute name="MFGP" value="PN-1321-C"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
 <attribute name="PRICE" value="8.50"/>
 </part>
 <part name="ACK.BUTTON.KEYCAP" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
 <attribute name="MFGN" value="ESwitch"/>
 <attribute name="MFGP" value="320.08RED"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
 <attribute name="PRICE" value="0.87"/>
 </part>
 <part name="STANDOFF1" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
-<attribute name="MFGN" value="Keystone"/>
-<attribute name="MFGP" value="24340"/>
-<attribute name="PRICE" value="0.44"/>
+<attribute name="MFGN" value="Harwin"/>
+<attribute name="MFGP" value="R30-3001502"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
+<attribute name="PRICE" value="1.00"/>
 </part>
 <part name="STANDOFF2" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
-<attribute name="MFGN" value="Keystone"/>
-<attribute name="MFGP" value="24340"/>
-<attribute name="PRICE" value="0.44"/>
+<attribute name="MFGN" value="Harwin"/>
+<attribute name="MFGP" value="R30-3001502"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
+<attribute name="PRICE" value="1.00"/>
 </part>
 <part name="STANDOFF3" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
-<attribute name="MFGN" value="Keystone"/>
-<attribute name="MFGP" value="24340"/>
-<attribute name="PRICE" value="0.44"/>
+<attribute name="MFGN" value="Harwin"/>
+<attribute name="MFGP" value="R30-3001502"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
+<attribute name="PRICE" value="1.00"/>
 </part>
 <part name="STANDOFF4" library="GW-devices" deviceset="EXTERNAL-COMPONENT" device="">
-<attribute name="MFGN" value="Keystone"/>
-<attribute name="MFGP" value="24340"/>
-<attribute name="PRICE" value="0.44"/>
+<attribute name="MFGN" value="Harwin"/>
+<attribute name="MFGP" value="R30-3001502"/>
+<attribute name="NOTES" value="DNP - non-board part"/>
+<attribute name="PRICE" value="1.00"/>
 </part>
+<part name="U$1" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$2" library="adafruit" deviceset="FIDUCIAL" device=""/>
+<part name="U$3" library="adafruit" deviceset="FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7869,32 +7937,41 @@ GRM155R61C104KA88D"/>
 <attribute name="MFGN" x="-134.62" y="63.5" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="63.5" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="63.5" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="63.5" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="ACK.BUTTON.KEYCAP" gate="G$1" x="-134.62" y="48.26">
 <attribute name="MFGN" x="-134.62" y="48.26" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="48.26" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="48.26" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="STANDOFF1" gate="G$1" x="-134.62" y="33.02">
 <attribute name="MFGN" x="-134.62" y="33.02" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="33.02" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="33.02" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="33.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="STANDOFF2" gate="G$1" x="-134.62" y="17.78">
 <attribute name="MFGN" x="-134.62" y="17.78" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="17.78" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="17.78" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="STANDOFF3" gate="G$1" x="-134.62" y="2.54">
 <attribute name="MFGN" x="-134.62" y="2.54" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="2.54" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="2.54" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="2.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="STANDOFF4" gate="G$1" x="-134.62" y="-12.7">
 <attribute name="MFGN" x="-134.62" y="-12.7" size="6.4516" layer="96" display="off"/>
 <attribute name="MFGP" x="-134.62" y="-12.7" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="-134.62" y="-12.7" size="6.4516" layer="96" display="off"/>
+<attribute name="NOTES" x="-134.62" y="-12.7" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="U$1" gate="G$1" x="-157.48" y="63.5"/>
+<instance part="U$2" gate="G$1" x="-157.48" y="53.34"/>
+<instance part="U$3" gate="G$1" x="-157.48" y="40.64"/>
 </instances>
 <busses>
 </busses>
