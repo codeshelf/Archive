@@ -530,7 +530,7 @@ design rules under a new name.</description>
 <attribute name="MFGP" value="CC0805KRX7R9BB272" x="11.9" y="27.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PRICE" value="0.03" x="11.9" y="27.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="L1" library="GW-devices" package="SLF10165" value="150uH" x="15.5" y="35.2" smashed="yes" rot="R90">
+<element name="L1" library="GW-devices" package="SLF10165" value="1.5uH" x="15.5" y="35.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="22.1" y="34.3" size="1.27" layer="25" rot="R90"/>
 <attribute name="MFGN" value="TDK" x="15.5" y="35.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFGP" value="SLF10165T-1R5N6R83PF" x="15.5" y="35.2" size="1.778" layer="27" rot="R90" display="off"/>

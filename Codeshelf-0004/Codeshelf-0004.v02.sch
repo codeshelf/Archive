@@ -779,7 +779,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <attribute name="MFGP" value="CC0805KRX7R9BB272"/>
 <attribute name="PRICE" value="0.03"/>
 </part>
-<part name="L1" library="GW-devices" deviceset="INDUCTOR-SMD-UNUSUAL" device="-SLF10165" value="150uH">
+<part name="L1" library="GW-devices" deviceset="INDUCTOR-SMD-UNUSUAL" device="-SLF10165" value="1.5uH">
 <attribute name="MFGN" value="TDK"/>
 <attribute name="MFGP" value="SLF10165T-1R5N6R83PF"/>
 <attribute name="PRICE" value="1.23"/>
