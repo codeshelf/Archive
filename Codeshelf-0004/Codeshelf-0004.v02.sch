@@ -786,12 +786,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
-<part name="RFB2" library="GW-devices" deviceset="RF-R" device="0402" value="143K">
+<part name="RFB1" library="GW-devices" deviceset="RF-R" device="0402" value="143K">
 <attribute name="MFGN" value="Vishay"/>
 <attribute name="MFGP" value="CRCW0402143KFKED"/>
 <attribute name="PRICE" value="0.05"/>
 </part>
-<part name="RFB1" library="GW-devices" deviceset="RF-R" device="0402" value="45.3K">
+<part name="RFB2" library="GW-devices" deviceset="RF-R" device="0402" value="45.3K">
 <attribute name="MFGN" value="Vishay"/>
 <attribute name="MFGP" value="CRCW040245K3FKED"/>
 <attribute name="PRICE" value="0.04"/>
@@ -854,12 +854,12 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 </instance>
 <instance part="GND9" gate="1" x="546.1" y="-5.08"/>
 <instance part="+3V9" gate="G$1" x="546.1" y="76.2"/>
-<instance part="RFB2" gate="G$1" x="508" y="48.26">
+<instance part="RFB1" gate="G$1" x="508" y="48.26">
 <attribute name="MFGN" x="508" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="508" y="48.26" size="1.778" layer="96" display="off"/>
 <attribute name="PRICE" x="508" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="RFB1" gate="G$1" x="492.76" y="25.4" rot="R90">
+<instance part="RFB2" gate="G$1" x="492.76" y="25.4" rot="R90">
 <attribute name="MFGN" x="492.76" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MFGP" x="492.76" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="PRICE" x="492.76" y="25.4" size="1.778" layer="96" rot="R90" display="off"/>
@@ -960,7 +960,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <pinref part="U-P1" gate="G$1" pin="EXP"/>
 <pinref part="CSS" gate="G$1" pin="2"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="RFB1" gate="G$1" pin="1"/>
+<pinref part="RFB2" gate="G$1" pin="1"/>
 <pinref part="COUT1" gate="G$1" pin="2"/>
 <pinref part="REN2" gate="G$1" pin="1"/>
 <pinref part="U-P2" gate="G$1" pin="G"/>
@@ -982,7 +982,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <junction x="546.1" y="60.96"/>
 <pinref part="L1" gate="1" pin="2"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
-<pinref part="RFB2" gate="G$1" pin="2"/>
+<pinref part="RFB1" gate="G$1" pin="2"/>
 <pinref part="CCOMP" gate="G$1" pin="2"/>
 <pinref part="COUT1" gate="G$1" pin="1"/>
 </segment>
@@ -1044,8 +1044,8 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <junction x="492.76" y="48.26"/>
 <junction x="492.76" y="35.56"/>
 <pinref part="U-P1" gate="G$1" pin="FB"/>
-<pinref part="RFB2" gate="G$1" pin="1"/>
-<pinref part="RFB1" gate="G$1" pin="2"/>
+<pinref part="RFB1" gate="G$1" pin="1"/>
+<pinref part="RFB2" gate="G$1" pin="2"/>
 <pinref part="RCOMP" gate="G$1" pin="2"/>
 </segment>
 </net>
