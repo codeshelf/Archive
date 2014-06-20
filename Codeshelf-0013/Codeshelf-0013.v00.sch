@@ -116,12 +116,6 @@
 <wire x1="0.3" y1="-1.3" x2="-0.3" y2="-1.3" width="0.127" layer="21"/>
 <circle x="-1.5" y="-1.8" radius="0.25" width="0" layer="21"/>
 </package>
-<package name="32KHZSMD">
-<smd name="P$1" x="1.25" y="0" dx="1.8" dy="1" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.25" y="0" dx="1.8" dy="1" layer="1" rot="R270"/>
-<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="0.6" y1="0.8" x2="-0.6" y2="0.8" width="0.127" layer="21"/>
-</package>
 <package name="VDFN-8">
 <description>&lt;b&gt;8M1-A-MLF (VDFN)&lt;/b&gt; 6 x 5 mm&lt;p&gt;
 Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</description>
@@ -394,22 +388,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <pin name="P$4" x="-10.16" y="2.54" visible="pad" length="short"/>
 <pin name="P$2" x="10.16" y="-2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
 </symbol>
-<symbol name="32KHZSCHEM">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="-2.54" y="2.286" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="AT45DB161VFN8">
 <wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -458,22 +436,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 <connect gate="G$1" pin="P$4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="32KHZ">
-<gates>
-<gate name="G$1" symbol="32KHZSCHEM" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="32KHZSMD">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1184,11 +1146,6 @@ type 0207, grid 7.5 mm</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="GW-devices" deviceset="RF-C" device="0402" value="12pF"/>
 <part name="C2" library="GW-devices" deviceset="RF-C" device="0402" value="12pF"/>
-<part name="U$3" library="KW2" deviceset="32KHZ" device=""/>
-<part name="C3" library="GW-devices" deviceset="RF-C" device="0402" value="12pF"/>
-<part name="C4" library="GW-devices" deviceset="RF-C" device="0402" value="12pF"/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="GW-devices" deviceset="RF-C" device="0402" value="0.1uF"/>
 <part name="C6" library="GW-devices" deviceset="RF-C" device="0402" value="1000pF"/>
 <part name="C7" library="GW-devices" deviceset="RF-C" device="0402" value="5pF"/>
@@ -1242,11 +1199,6 @@ type 0207, grid 7.5 mm</description>
 <instance part="GND2" gate="1" x="-127" y="33.02" rot="R180"/>
 <instance part="C1" gate="G$1" x="-91.44" y="25.4"/>
 <instance part="C2" gate="G$1" x="-127" y="25.4" rot="R180"/>
-<instance part="U$3" gate="G$1" x="-116.84" y="53.34"/>
-<instance part="C3" gate="G$1" x="-104.14" y="50.8"/>
-<instance part="C4" gate="G$1" x="-132.08" y="50.8"/>
-<instance part="GND3" gate="1" x="-132.08" y="40.64"/>
-<instance part="GND4" gate="1" x="-104.14" y="40.64"/>
 <instance part="C5" gate="G$1" x="2.54" y="76.2" rot="R180"/>
 <instance part="C6" gate="G$1" x="-7.62" y="76.2" rot="R180"/>
 <instance part="C7" gate="G$1" x="-17.78" y="76.2" rot="R180"/>
@@ -1301,16 +1253,6 @@ type 0207, grid 7.5 mm</description>
 <wire x1="-127" y1="30.48" x2="-119.38" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="-127" y="30.48"/>
-</segment>
-<segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="-132.08" y1="43.18" x2="-132.08" y2="45.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="-104.14" y1="43.18" x2="-104.14" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -1434,34 +1376,6 @@ type 0207, grid 7.5 mm</description>
 <wire x1="-81.28" y1="25.4" x2="-68.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-91.44" y="30.48"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="-121.92" y1="53.34" x2="-132.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="XTAL32"/>
-<wire x1="-66.04" y1="35.56" x2="-66.04" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="45.72" x2="-93.98" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="45.72" x2="-93.98" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="60.96" x2="-132.08" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="60.96" x2="-132.08" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-132.08" y="53.34"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-111.76" y1="53.34" x2="-104.14" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="53.34" x2="-96.52" y2="53.34" width="0.1524" layer="91"/>
-<junction x="-104.14" y="53.34"/>
-<pinref part="U$1" gate="G$1" pin="EXTAL32"/>
-<wire x1="-96.52" y1="53.34" x2="-96.52" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="43.18" x2="-71.12" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="43.18" x2="-71.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-71.12" y1="33.02" x2="-66.04" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">

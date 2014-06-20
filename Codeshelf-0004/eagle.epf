@@ -349,8 +349,8 @@ UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Codeshelf-0013/ZIGBEE.lbr
 
 [Win_1]
 Type="Control Panel"
-Loc="2309 128 2908 527"
-State=1
+Loc="265 95 864 494"
+State=2
 Number=0
 
 [Desktop]

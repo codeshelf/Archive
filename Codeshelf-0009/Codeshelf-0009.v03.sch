@@ -559,6 +559,25 @@ MAX3223-MAX3243.pdf</description>
 <pad name="P$2" x="3.25" y="2.25" drill="0.99"/>
 <text x="-2.6" y="4.6" size="1.27" layer="25">&gt;Name</text>
 </package>
+<package name="RJ45-8">
+<wire x1="-7.62" y1="10" x2="7.62" y2="10" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3" x2="-7.62" y2="10" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3" x2="7.62" y2="-3" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="10" x2="7.62" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-3" x2="-7.62" y2="-7.9375" width="0.2032" layer="51"/>
+<wire x1="-7.62" y1="-7.9375" x2="7.62" y2="-7.9375" width="0.2032" layer="51"/>
+<wire x1="7.62" y1="-7.9375" x2="7.62" y2="-3" width="0.2032" layer="51"/>
+<pad name="8" x="4.445" y="8.89" drill="1" diameter="1.8796"/>
+<pad name="7" x="3.175" y="6.35" drill="1" diameter="1.8796"/>
+<pad name="6" x="1.905" y="8.89" drill="1" diameter="1.8796"/>
+<pad name="4" x="-0.635" y="8.89" drill="1" diameter="1.8796"/>
+<pad name="2" x="-3.175" y="8.89" drill="1" diameter="1.8796"/>
+<pad name="5" x="0.635" y="6.35" drill="1" diameter="1.8796"/>
+<pad name="3" x="-1.905" y="6.35" drill="1" diameter="1.8796"/>
+<pad name="1" x="-4.445" y="6.35" drill="1" diameter="1.8796" shape="square"/>
+<hole x="-5.715" y="0" drill="3.2"/>
+<hole x="5.715" y="0" drill="3.2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -859,6 +878,22 @@ MAX3223-MAX3243.pdf</description>
 <pin name="2" x="-5.08" y="-2.54" visible="pin" length="short" direction="in"/>
 <pin name="3" x="5.08" y="0" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="4" x="5.08" y="-2.54" visible="pin" length="short" direction="in" rot="R180"/>
+</symbol>
+<symbol name="RJ45-8">
+<wire x1="-7.62" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="13.208" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="95">&gt;Value</text>
+<pin name="1" x="-12.7" y="10.16" visible="pin" length="middle"/>
+<pin name="2" x="-12.7" y="7.62" visible="pin" length="middle"/>
+<pin name="3" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="4" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="8" x="-12.7" y="-7.62" visible="pin" length="middle"/>
+<pin name="7" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="6" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="5" x="-12.7" y="0" visible="pin" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1246,6 +1281,30 @@ MAX3223-MAX3243.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="RJ45-8">
+<description>&lt;b&gt;RJ45 Jack&lt;/b&gt;
+MFG part number 54602-908lf</description>
+<gates>
+<gate name="G$1" symbol="RJ45-8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="RJ45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun">
@@ -1547,6 +1606,8 @@ MAX3223-MAX3243.pdf</description>
 <attribute name="MFGP" value="FSM16JH"/>
 <attribute name="PRICE" value="0.18"/>
 </part>
+<part name="U$1" library="GW-devices" deviceset="RJ45-8" device="PTH"/>
+<part name="U$2" library="GW-devices" deviceset="RJ45-8" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -1677,6 +1738,8 @@ MAX3223-MAX3243.pdf</description>
 <attribute name="MFGP" x="124.46" y="58.42" size="6.4516" layer="96" display="off"/>
 <attribute name="PRICE" x="124.46" y="58.42" size="6.4516" layer="96" display="off"/>
 </instance>
+<instance part="U$1" gate="G$1" x="170.18" y="-20.32"/>
+<instance part="U$2" gate="G$1" x="170.18" y="-66.04"/>
 </instances>
 <busses>
 </busses>
@@ -1691,6 +1754,23 @@ MAX3223-MAX3243.pdf</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
 <pinref part="J4" gate="G$1" pin="P1"/>
+<wire x1="129.54" y1="-38.1" x2="137.16" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-38.1" x2="137.16" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="129.54" y="-38.1"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="-25.4" x2="137.16" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-12.7" x2="137.16" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="7"/>
+<wire x1="157.48" y1="-25.4" x2="137.16" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="137.16" y="-25.4"/>
+<wire x1="137.16" y1="-38.1" x2="137.16" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="137.16" y="-38.1"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="-58.42" x2="157.48" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-58.42" x2="137.16" y2="-71.12" width="0.1524" layer="91"/>
+<junction x="137.16" y="-58.42"/>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="137.16" y1="-71.12" x2="157.48" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-33.02" y1="0" x2="-33.02" y2="-43.18" width="0.1524" layer="91"/>
@@ -1787,6 +1867,23 @@ MAX3223-MAX3243.pdf</description>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
 <pinref part="J1" gate="G$1" pin="P1"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="-10.16" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-10.16" x2="139.7" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-27.94" x2="139.7" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-30.48" x2="106.68" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="106.68" y="-30.48"/>
+<pinref part="U$1" gate="G$1" pin="8"/>
+<wire x1="157.48" y1="-27.94" x2="139.7" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="139.7" y="-27.94"/>
+<wire x1="139.7" y1="-30.48" x2="139.7" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="139.7" y="-30.48"/>
+<pinref part="U$2" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-55.88" x2="157.48" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-55.88" x2="139.7" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="139.7" y="-55.88"/>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="157.48" y1="-73.66" x2="139.7" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-33.02" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
@@ -1881,9 +1978,17 @@ MAX3223-MAX3243.pdf</description>
 <net name="B" class="0">
 <segment>
 <wire x1="83.82" y1="-33.02" x2="114.3" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="-33.02" x2="114.3" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-33.02" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="B"/>
 <pinref part="J2" gate="G$1" pin="P1"/>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="114.3" y1="-17.78" x2="114.3" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="-63.5" x2="114.3" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-63.5" x2="114.3" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="114.3" y="-33.02"/>
+<pinref part="U$1" gate="G$1" pin="4"/>
+<wire x1="157.48" y1="-17.78" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="114.3" y="-17.78"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1913,9 +2018,17 @@ MAX3223-MAX3243.pdf</description>
 <net name="A" class="0">
 <segment>
 <wire x1="83.82" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="-35.56" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-35.56" x2="121.92" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="A"/>
 <pinref part="J3" gate="G$1" pin="P1"/>
+<wire x1="121.92" y1="-20.32" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-35.56" x2="121.92" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="121.92" y="-35.56"/>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="121.92" y1="-66.04" x2="157.48" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5"/>
+<wire x1="121.92" y1="-20.32" x2="157.48" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="121.92" y="-20.32"/>
 </segment>
 </net>
 <net name="N$1" class="0">
