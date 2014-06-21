@@ -1975,7 +1975,7 @@ MFG part number 54602-908lf</description>
 <pinref part="U3" gate="G$1" pin="DE"/>
 </segment>
 </net>
-<net name="B" class="0">
+<net name="485_N" class="0">
 <segment>
 <wire x1="83.82" y1="-33.02" x2="114.3" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-33.02" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
@@ -2015,7 +2015,7 @@ MFG part number 54602-908lf</description>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="A" class="0">
+<net name="485_P" class="0">
 <segment>
 <wire x1="83.82" y1="-35.56" x2="121.92" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="-35.56" x2="121.92" y2="-20.32" width="0.1524" layer="91"/>
