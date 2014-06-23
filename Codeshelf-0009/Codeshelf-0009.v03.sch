@@ -578,6 +578,22 @@ MAX3223-MAX3243.pdf</description>
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
 </package>
+<package name="MOLEX-0955016649">
+<hole x="-5.715" y="0" drill="3.25"/>
+<hole x="5.715" y="0" drill="3.25"/>
+<smd name="P$6" x="1.905" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$5" x="0.63" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$7" x="3.175" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$8" x="4.445" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.64" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.91" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$2" x="-3.18" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$1" x="-4.45" y="10.225" dx="6.35" dy="0.76" layer="1" rot="R90"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.127" layer="39"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.127" layer="39"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.127" layer="39"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1303,6 +1319,21 @@ MFG part number 54602-908lf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="MOLEX-0955016649">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -1606,8 +1637,8 @@ MFG part number 54602-908lf</description>
 <attribute name="MFGP" value="FSM16JH"/>
 <attribute name="PRICE" value="0.18"/>
 </part>
-<part name="U$1" library="GW-devices" deviceset="RJ45-8" device="PTH"/>
-<part name="U$2" library="GW-devices" deviceset="RJ45-8" device="PTH"/>
+<part name="U$1" library="GW-devices" deviceset="RJ45-8" device="" value="RJ45-8"/>
+<part name="U$2" library="GW-devices" deviceset="RJ45-8" device="" value="RJ45-8"/>
 </parts>
 <sheets>
 <sheet>
