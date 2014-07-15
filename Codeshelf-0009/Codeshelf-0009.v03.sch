@@ -594,6 +594,17 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.127" layer="39"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.127" layer="39"/>
 </package>
+<package name="ESWITCH-TL3301PF">
+<wire x1="-3.1" y1="3.1" x2="3.1" y2="3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="3.1" x2="3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-3.1" x2="-3.1" y2="-3.1" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="-3.1" x2="-3.1" y2="3.1" width="0.127" layer="21"/>
+<smd name="1" x="-4.61" y="2.25" dx="2.5" dy="1.3" layer="1"/>
+<smd name="2" x="4.61" y="2.25" dx="2.5" dy="1.3" layer="1"/>
+<smd name="4" x="4.61" y="-2.25" dx="2.5" dy="1.3" layer="1"/>
+<smd name="3" x="-4.61" y="-2.25" dx="2.5" dy="1.3" layer="1"/>
+<text x="-3.6" y="3.9" size="1.6764" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1295,6 +1306,17 @@ MAX3223-MAX3243.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="ESWITCH-TL3301PF">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RJ45-8">
@@ -1627,18 +1649,10 @@ MFG part number 54602-908lf</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SW-ACK" library="GW-devices" deviceset="SWITCH-TACTILE" device="-320.03E11"/>
-<part name="SW-DEC" library="GW-devices" deviceset="SWITCH-TACTILE" device="-FSM">
-<attribute name="MFGN" value="TE Connectivity"/>
-<attribute name="MFGP" value="FSM16JH"/>
-<attribute name="PRICE" value="0.18"/>
-</part>
-<part name="SW-INC" library="GW-devices" deviceset="SWITCH-TACTILE" device="-FSM">
-<attribute name="MFGN" value="TE Connectivity"/>
-<attribute name="MFGP" value="FSM16JH"/>
-<attribute name="PRICE" value="0.18"/>
-</part>
 <part name="U$1" library="GW-devices" deviceset="RJ45-8" device="" value="RJ45-8"/>
 <part name="U$2" library="GW-devices" deviceset="RJ45-8" device="" value="RJ45-8"/>
+<part name="U$3" library="GW-devices" deviceset="SWITCH-TACTILE" device="" value="SWITCH-TACTILE"/>
+<part name="U$4" library="GW-devices" deviceset="SWITCH-TACTILE" device="" value="SWITCH-TACTILE"/>
 </parts>
 <sheets>
 <sheet>
@@ -1759,18 +1773,10 @@ MFG part number 54602-908lf</description>
 <instance part="+3V6" gate="G$1" x="-307.34" y="60.96"/>
 <instance part="GND5" gate="1" x="144.78" y="7.62"/>
 <instance part="SW-ACK" gate="G$1" x="124.46" y="27.94"/>
-<instance part="SW-DEC" gate="G$1" x="124.46" y="43.18">
-<attribute name="MFGN" x="124.46" y="43.18" size="6.4516" layer="96" display="off"/>
-<attribute name="MFGP" x="124.46" y="43.18" size="6.4516" layer="96" display="off"/>
-<attribute name="PRICE" x="124.46" y="43.18" size="6.4516" layer="96" display="off"/>
-</instance>
-<instance part="SW-INC" gate="G$1" x="124.46" y="58.42">
-<attribute name="MFGN" x="124.46" y="58.42" size="6.4516" layer="96" display="off"/>
-<attribute name="MFGP" x="124.46" y="58.42" size="6.4516" layer="96" display="off"/>
-<attribute name="PRICE" x="124.46" y="58.42" size="6.4516" layer="96" display="off"/>
-</instance>
 <instance part="U$1" gate="G$1" x="170.18" y="-20.32"/>
 <instance part="U$2" gate="G$1" x="170.18" y="-66.04"/>
+<instance part="U$3" gate="G$1" x="124.46" y="58.42"/>
+<instance part="U$4" gate="G$1" x="124.46" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -1880,12 +1886,12 @@ MFG part number 54602-908lf</description>
 <junction x="132.08" y="27.94"/>
 <junction x="132.08" y="58.42"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="SW-DEC" gate="G$1" pin="4"/>
 <pinref part="SW-ACK" gate="G$1" pin="4"/>
-<pinref part="SW-INC" gate="G$1" pin="4"/>
-<pinref part="SW-INC" gate="G$1" pin="3"/>
-<pinref part="SW-DEC" gate="G$1" pin="3"/>
 <pinref part="SW-ACK" gate="G$1" pin="3"/>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<pinref part="U$3" gate="G$1" pin="4"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="+3V3" class="1">
@@ -2427,18 +2433,16 @@ MFG part number 54602-908lf</description>
 <wire x1="116.84" y1="43.18" x2="116.84" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 <junction x="116.84" y="43.18"/>
-<pinref part="SW-DEC" gate="G$1" pin="1"/>
-<pinref part="SW-DEC" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="43.18" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PTA1/KBIP1"/>
 <wire x1="45.72" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="SW-INC" gate="G$1" pin="2"/>
-<pinref part="SW-INC" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
@@ -2446,6 +2450,8 @@ MFG part number 54602-908lf</description>
 <junction x="116.84" y="55.88"/>
 <pinref part="U1" gate="G$1" pin="PTA0/KBIP0"/>
 <wire x1="25.4" y1="55.88" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
