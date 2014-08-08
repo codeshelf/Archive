@@ -1,0 +1,43 @@
+Screaming Circuits SMD component position file.
+Created by Centroid_ScreamingCircuits_smd.ulp 1.2.0.
+
+Centroid Data for pc board: "Codeshelf-0008.v02.brd" as of: 8/8/2014 11:08:30 AM
+Measurements are in inches. Comma delimited
+Only surface mount components included
+
+RefDes,Layer,LocationX,LocationY,Rotation
+C1,Top,1.536,1.124,270
+C2,Top,0.728,2.902,0
+C3,Top,0.626,1.512,180
+C4,Top,0.520,3.020,0
+C10,Top,4.638,3.008,90
+C11,Top,4.118,1.650,90
+C12,Top,3.177,1.705,90
+C13,Top,3.177,2.118,90
+C14,Top,3.177,2.555,90
+D1,Top,0.256,2.961,0
+D2,Top,0.177,2.961,0
+IC1,Top,4.378,2.386,180
+IC2,Top,3.937,2.173,270
+IC4,Top,4.764,2.335,0
+IC5,Top,4.370,2.079,180
+IC6,Top,3.941,2.598,270
+Q1,Top,2.465,2.350,180
+Q2,Top,2.031,2.350,180
+R1,Top,0.563,2.902,180
+R2,Top,0.256,3.118,270
+R3,Top,0.177,3.118,270
+R4,Top,2.472,2.528,180
+R5,Top,2.465,2.165,90
+R6,Top,2.028,2.528,180
+R7,Top,2.031,2.165,270
+U$2,Top,0.508,0.362,0
+U$3,Top,0.457,3.748,0
+U$4,Top,5.331,0.602,0
+U1,Top,1.177,2.217,90
+U3,Top,2.067,0.291,180
+U4,Top,4.327,1.555,0
+U5,Top,4.827,2.874,0
+U6,Top,3.374,1.764,90
+U7,Top,3.374,2.173,90
+U8,Top,3.374,2.614,90
