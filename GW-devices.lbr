@@ -27989,7 +27989,7 @@ Metric Code Size 3225</description>
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
 </package>
-<package name="SWITCH-TACTILE-320.03E11">
+<package name="SWITCH-TACTILE-320.01E11WHT">
 <wire x1="-6.2" y1="6.2" x2="6.2" y2="6.2" width="0.127" layer="21"/>
 <wire x1="6.2" y1="6.2" x2="6.2" y2="-6.2" width="0.127" layer="21"/>
 <wire x1="6.2" y1="-6.2" x2="-6.2" y2="-6.2" width="0.127" layer="21"/>
@@ -32709,7 +32709,7 @@ Metric Code Size 3225</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-320.03E11" package="SWITCH-TACTILE-320.03E11">
+<device name="-320.01E11WHT" package="SWITCH-TACTILE-320.01E11WHT">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -34231,7 +34231,7 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAT9552">
+<deviceset name="PCA9552">
 <gates>
 <gate name="G$1" symbol="CAT9552" x="0" y="0"/>
 </gates>
@@ -34265,9 +34265,9 @@ This is the standard 5.5mm barrel jack for power. The PTH is the most common, pr
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MFGN" value="On Semiconductor" constant="no"/>
-<attribute name="MFGP" value="CAT9552YI-T2" constant="no"/>
-<attribute name="PRICE" value="1.28" constant="no"/>
+<attribute name="MFGN" value="NXP" constant="no"/>
+<attribute name="MFGP" value="PCA9552" constant="no"/>
+<attribute name="PRICE" value="2.67" constant="no"/>
 </technology>
 </technologies>
 </device>
