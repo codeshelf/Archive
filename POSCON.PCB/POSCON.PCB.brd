@@ -639,7 +639,7 @@ design rules under a new name.</description>
 </element>
 <element name="U4" library="GW-devices" package="TSSOP24" value="PCA9552" x="-2.5" y="1.5" smashed="yes" rot="MR90">
 <attribute name="MFGN" value="NXP" x="19" y="1.5" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MFGP" value="PCA9552" x="19" y="1.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFGP" value="PCA9552PW,112" x="19" y="1.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="PRICE" value="2.67" x="19" y="1.5" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="-3.6328" y="6.9044" size="1.27" layer="22" ratio="10" rot="MR180"/>
 <attribute name="VALUE" x="-4.5828" y="6.6862" size="1.016" layer="28" ratio="10" rot="MR180"/>
@@ -691,6 +691,7 @@ design rules under a new name.</description>
 <element name="SW-ACK" library="GW-devices" package="SWITCH-TACTILE-320.01E11WHT" value="SWITCH-TACTILE-320.01E11WHT" x="5.45" y="0">
 <attribute name="MFGN" value="ESwitch" x="-7.55" y="15" size="1.778" layer="27" display="off"/>
 <attribute name="MFGP" value="320.01E11WHT" x="-7.55" y="15" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="1.38" x="5.45" y="0" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$3" library="GW-devices" package="ESWITCH-TL3301PF" value="SWITCH-TACTILE" x="-13.5" y="-12.75">
 <attribute name="NOTES" value="DNP" x="-13.5" y="-12.75" size="1.778" layer="27" display="off"/>
@@ -713,6 +714,7 @@ design rules under a new name.</description>
 <element name="U$5" library="GW-devices" package="PLCC-6" value="WS2812" x="21" y="0">
 <attribute name="MFGN" value="Worldsemi" x="21" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MFGP" value="WS2812" x="21" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="NOTES" value="DNP" x="21" y="0" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>

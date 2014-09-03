@@ -1484,7 +1484,9 @@ MFG part number 54602-908lf</description>
 <attribute name="MFGP" value="SN65HVD1781DR"/>
 <attribute name="PRICE" value="4.29"/>
 </part>
-<part name="U4" library="GW-devices" deviceset="PCA9552" device=""/>
+<part name="U4" library="GW-devices" deviceset="PCA9552" device="">
+<attribute name="MFGP" value="PCA9552PW,112"/>
+</part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -1532,6 +1534,7 @@ MFG part number 54602-908lf</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SW-ACK" library="GW-devices" deviceset="SWITCH-TACTILE" device="-320.01E11WHT">
 <attribute name="MFGP" value="320.01E11WHT"/>
+<attribute name="PRICE" value="1.38"/>
 </part>
 <part name="U$3" library="GW-devices" deviceset="SWITCH-TACTILE" device="" value="SWITCH-TACTILE">
 <attribute name="NOTES" value="DNP"/>
@@ -1552,6 +1555,7 @@ MFG part number 54602-908lf</description>
 <part name="U$5" library="GW-devices" deviceset="WS2812" device="">
 <attribute name="MFGN" value="Worldsemi"/>
 <attribute name="MFGP" value="WS2812"/>
+<attribute name="NOTES" value="DNP"/>
 </part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
@@ -1642,7 +1646,9 @@ MFG part number 54602-908lf</description>
 <instance part="+3V3" gate="G$1" x="-307.34" y="109.22"/>
 <instance part="+3V6" gate="G$1" x="-307.34" y="60.96"/>
 <instance part="GND5" gate="1" x="144.78" y="7.62"/>
-<instance part="SW-ACK" gate="G$1" x="124.46" y="27.94"/>
+<instance part="SW-ACK" gate="G$1" x="124.46" y="27.94">
+<attribute name="PRICE" x="124.46" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$3" gate="G$1" x="124.46" y="58.42">
 <attribute name="NOTES" x="124.46" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
@@ -1662,6 +1668,7 @@ MFG part number 54602-908lf</description>
 <instance part="U$5" gate="G$1" x="10.16" y="-66.04">
 <attribute name="MFGN" x="10.16" y="-66.04" size="1.778" layer="96" display="off"/>
 <attribute name="MFGP" x="10.16" y="-66.04" size="1.778" layer="96" display="off"/>
+<attribute name="NOTES" x="10.16" y="-66.04" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND2" gate="1" x="-7.62" y="-81.28"/>
 <instance part="+3V7" gate="G$1" x="7.62" y="-43.18"/>
