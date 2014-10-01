@@ -398,6 +398,13 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <smd name="P$23" x="-2.2" y="0.72" dx="0.4" dy="0.32" layer="1"/>
 <smd name="P$24" x="-2.2" y="1.44" dx="0.4" dy="0.32" layer="1"/>
 </package>
+<package name="MMCX_VERT">
+<smd name="P$1" x="0" y="0" dx="0.89" dy="0.89" layer="1" roundness="100"/>
+<smd name="P$2" x="-1.32" y="1.32" dx="0.94" dy="0.94" layer="1"/>
+<smd name="P$3" x="1.32" y="1.32" dx="0.94" dy="0.94" layer="1"/>
+<smd name="P$4" x="1.32" y="-1.32" dx="0.94" dy="0.94" layer="1"/>
+<smd name="P$5" x="-1.32" y="-1.32" dx="0.94" dy="0.94" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="32MHZSCHEM">
@@ -494,6 +501,21 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <wire x1="22.86" y1="-22.86" x2="-22.86" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-22.86" y1="-22.86" x2="-22.86" y2="22.86" width="0.254" layer="94"/>
 <pin name="P$25" x="22.86" y="-25.4" length="middle" rot="R90"/>
+</symbol>
+<symbol name="MMCX_VERT">
+<circle x="0" y="0" radius="5.6796125" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0" layer="94"/>
+<pin name="P$5" x="10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$2" x="-10.16" y="-15.24" length="middle" rot="R90"/>
+<pin name="P$3" x="-10.16" y="15.24" length="middle" rot="R270"/>
+<pin name="P$4" x="10.16" y="15.24" length="middle" rot="R270"/>
+<pin name="P$1" x="-15.24" y="0" length="middle"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -669,6 +691,25 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <connect gate="G$1" pin="VCC_DIG" pad="P$8"/>
 <connect gate="G$1" pin="VCC_LNA" pad="P$22"/>
 <connect gate="G$1" pin="VCC_PA" pad="P$10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMCX_VERT">
+<gates>
+<gate name="G$1" symbol="MMCX_VERT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MMCX_VERT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1183,6 +1224,46 @@ type 0207, grid 7.5 mm</description>
 <smd name="P$1" x="-0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
 <smd name="P$2" x="0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
 </package>
+<package name="F-ANTENNA-4LAYER-TOP">
+<smd name="IN" x="0" y="1" dx="0.2" dy="0.16" layer="1"/>
+<smd name="GND" x="6" y="0" dx="0.2" dy="0.16" layer="1"/>
+<rectangle x1="4.5" y1="-0.5" x2="7.5" y2="7.3" layer="1"/>
+<rectangle x1="-17" y1="4.8" x2="7.5" y2="7.3" layer="1"/>
+<rectangle x1="-0.4" y1="0.5" x2="0.45" y2="4.8" layer="1"/>
+</package>
+<package name="F-ANTENNA-4LAYER-BOT">
+<smd name="IN" x="0" y="1" dx="0.2" dy="0.16" layer="16" rot="R180"/>
+<smd name="GND" x="6" y="0" dx="0.2" dy="0.16" layer="16" rot="R180"/>
+<rectangle x1="4.5" y1="-0.5" x2="7.5" y2="7.3" layer="16" rot="R180"/>
+<rectangle x1="-17" y1="4.8" x2="7.5" y2="7.3" layer="16" rot="R180"/>
+<rectangle x1="-0.4" y1="0.5" x2="0.45" y2="4.8" layer="16" rot="R180"/>
+</package>
+<package name="F-ANTENNA-2LAYER-TOP">
+<smd name="IN" x="0" y="0.5" dx="1" dy="1" layer="1"/>
+<smd name="GND" x="-6" y="0.5" dx="1" dy="1" layer="1"/>
+<rectangle x1="-7.4" y1="0" x2="-4.15" y2="7.1" layer="1"/>
+<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="1"/>
+<rectangle x1="-0.5" y1="0" x2="0.6" y2="7.1" layer="1"/>
+<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="1"/>
+</package>
+<package name="F-ANTENNA-2LAYER-BOT">
+<smd name="IN" x="0" y="0.5" dx="1" dy="1" layer="16"/>
+<smd name="GND" x="-6" y="0.5" dx="1" dy="1" layer="16"/>
+<rectangle x1="-7.4" y1="0" x2="-4.15" y2="7.1" layer="16"/>
+<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="16"/>
+<rectangle x1="-0.5" y1="0" x2="0.6" y2="7.1" layer="16"/>
+</package>
+<package name="F-ANTENNA-2LAYER-BOTH">
+<pad name="IN2" x="0" y="0" drill="0.2"/>
+<smd name="IN" x="-0.1" y="0" dx="1" dy="1" layer="1"/>
+<smd name="GND" x="-6.1" y="0" dx="1" dy="1" layer="1"/>
+<rectangle x1="-7.5" y1="-0.5" x2="-4.25" y2="6.6" layer="1"/>
+<rectangle x1="-7.5" y1="3.9" x2="16.5" y2="6.65" layer="1"/>
+<rectangle x1="-0.6" y1="-0.5" x2="0.5" y2="6.6" layer="1"/>
+<rectangle x1="-7.5" y1="3.9" x2="16.5" y2="6.65" layer="16" rot="R180"/>
+<rectangle x1="-7.5" y1="-0.5" x2="-4.25" y2="6.6" layer="16" rot="R180"/>
+<rectangle x1="-0.6" y1="-0.5" x2="0.5" y2="6.6" layer="16" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1218,6 +1299,13 @@ type 0207, grid 7.5 mm</description>
 <text x="-2.794" y="-1.27" size="1.778" layer="95" font="vector" rot="R90">&gt;Name</text>
 <pin name="1" x="0" y="10.16" visible="off" length="middle" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+</symbol>
+<symbol name="F-ANTENNA">
+<wire x1="0" y1="0" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="IN" x="0" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND" x="7.62" y="5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1344,6 +1432,59 @@ type 0207, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="F-ANTENNA">
+<description>PCB-base F-Antenna</description>
+<gates>
+<gate name="G$1" symbol="F-ANTENNA" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="-4LTOP" package="F-ANTENNA-4LAYER-TOP">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-4LBOT" package="F-ANTENNA-4LAYER-BOT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2LTOP" package="F-ANTENNA-2LAYER-TOP">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2LBOT" package="F-ANTENNA-2LAYER-BOT">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2LBOTH" package="F-ANTENNA-2LAYER-BOTH">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="IN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1441,6 +1582,13 @@ type 0207, grid 7.5 mm</description>
 <part name="C$24" library="GW-devices" deviceset="RF-C" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
+<part name="U$4" library="GW-devices" deviceset="F-ANTENNA" device="-4LTOP"/>
+<part name="GND28" library="supply1" deviceset="GND" device=""/>
+<part name="U$5" library="KW2" deviceset="MMCX_VERT" device=""/>
+<part name="GND29" library="supply1" deviceset="GND" device=""/>
+<part name="GND30" library="supply1" deviceset="GND" device=""/>
+<part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="GND32" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1532,6 +1680,13 @@ type 0207, grid 7.5 mm</description>
 <instance part="C$24" gate="G$1" x="172.72" y="5.08" rot="R180"/>
 <instance part="GND26" gate="1" x="157.48" y="7.62"/>
 <instance part="GND27" gate="1" x="177.8" y="-5.08"/>
+<instance part="U$4" gate="G$1" x="259.08" y="-53.34" rot="MR0"/>
+<instance part="GND28" gate="1" x="251.46" y="-50.8"/>
+<instance part="U$5" gate="G$1" x="271.78" y="53.34" rot="R90"/>
+<instance part="GND29" gate="1" x="256.54" y="40.64"/>
+<instance part="GND30" gate="1" x="287.02" y="40.64"/>
+<instance part="GND31" gate="1" x="287.02" y="60.96"/>
+<instance part="GND32" gate="1" x="256.54" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -1746,6 +1901,26 @@ type 0207, grid 7.5 mm</description>
 <pinref part="U$3" gate="G$1" pin="GND1"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="193.04" y1="-2.54" x2="177.8" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$3"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$5"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="P$4"/>
+<pinref part="GND32" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="CLKM1" class="0">
@@ -2144,6 +2319,9 @@ type 0207, grid 7.5 mm</description>
 <pinref part="L$14" gate="G$1" pin="2"/>
 <pinref part="C$15" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="-33.02" x2="271.78" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="-45.72" x2="271.78" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="IN"/>
+<wire x1="271.78" y1="-58.42" x2="259.08" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -2160,6 +2338,8 @@ type 0207, grid 7.5 mm</description>
 <pinref part="L$17" gate="G$1" pin="1"/>
 <pinref part="C$16" gate="G$1" pin="1"/>
 <wire x1="271.78" y1="17.78" x2="271.78" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="P$1"/>
+<wire x1="271.78" y1="25.4" x2="271.78" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -2225,11 +2405,9 @@ type 0207, grid 7.5 mm</description>
 <errors>
 <approved hash="104,1,-99.06,25.4,U$2,P$2,GND,,,"/>
 <approved hash="104,1,-86.36,-53.34,IC1,VCC,+3V3,,,"/>
-<approved hash="108,1,-116.84,-43.18,+3V3,,,,,"/>
 <approved hash="110,1,-119.38,-58.42,N$17,N$9,,,,"/>
 <approved hash="110,1,-119.38,-58.42,N$17,N$9,,,,"/>
 <approved hash="113,1,-102.625,-16.3788,JP1,,,,,"/>
-<approved hash="113,1,-125.455,-17.78,R4,,,,,"/>
 </errors>
 </schematic>
 </drawing>
