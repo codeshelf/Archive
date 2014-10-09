@@ -1585,32 +1585,35 @@ MFG part number 54602-908lf</description>
 </part>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED2" library="GW-devices" deviceset="7SEGMENT-1DIGIT" device="SMD">
-<attribute name="NOTES" value="DNP"/>
+<attribute name="MFGN" value="Kingbright"/>
+<attribute name="MFGP" value="ACSA04-41SEKWA-F01 "/>
 </part>
 <part name="LED1" library="GW-devices" deviceset="7SEGMENT-1DIGIT" device="SMD">
-<attribute name="NOTES" value="DNP"/>
+<attribute name="MFGN" value="Kingbright"/>
+<attribute name="MFGP" value="ACSA04-41SEKWA-F01 "/>
 </part>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="SW-ACK" library="GW-devices" deviceset="SWITCH-TACTILE" device="-320.01E11WHT">
 <attribute name="MFGP" value="320.01E11WHT"/>
-<attribute name="PRICE" value="1.38"/>
 </part>
 <part name="U$3" library="GW-devices" deviceset="SWITCH-TACTILE" device="" value="SWITCH-TACTILE">
-<attribute name="NOTES" value="DNP"/>
+<attribute name="MFGN" value="E-Switch"/>
+<attribute name="MFGP" value="TL3301PF160QG"/>
 </part>
 <part name="U$4" library="GW-devices" deviceset="SWITCH-TACTILE" device="" value="SWITCH-TACTILE">
-<attribute name="NOTES" value="DNP"/>
+<attribute name="MFGN" value="E-Switch"/>
+<attribute name="MFGP" value="TL3301PF160QG"/>
 </part>
 <part name="J1-PROG" library="GW-devices" deviceset="RJ45-8" device="">
 <attribute name="MFGN" value="Molex"/>
-<attribute name="MFGP" value="0955016649"/>
+<attribute name="MFGP" value="0955016889"/>
 <attribute name="PRICE" value="0.89"/>
 </part>
 <part name="J2" library="GW-devices" deviceset="RJ45-8" device="">
 <attribute name="MFGN" value="Molex"/>
-<attribute name="MFGP" value="0955016649"/>
+<attribute name="MFGP" value="0955016889"/>
 <attribute name="PRICE" value="0.89"/>
 </part>
 <part name="U$5" library="GW-devices" deviceset="WS2812" device="">
@@ -1705,22 +1708,24 @@ MFG part number 54602-908lf</description>
 </instance>
 <instance part="+3V5" gate="G$1" x="-73.66" y="81.28"/>
 <instance part="LED2" gate="G$1" x="-274.32" y="81.28">
-<attribute name="NOTES" x="-274.32" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFGN" x="-274.32" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="-274.32" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="LED1" gate="G$1" x="-243.84" y="81.28">
-<attribute name="NOTES" x="-243.84" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFGN" x="-243.84" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="-243.84" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="+3V3" gate="G$1" x="-307.34" y="109.22"/>
 <instance part="+3V6" gate="G$1" x="-307.34" y="60.96"/>
 <instance part="GND5" gate="1" x="144.78" y="7.62"/>
-<instance part="SW-ACK" gate="G$1" x="124.46" y="27.94">
-<attribute name="PRICE" x="124.46" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="SW-ACK" gate="G$1" x="124.46" y="27.94"/>
 <instance part="U$3" gate="G$1" x="124.46" y="58.42">
-<attribute name="NOTES" x="124.46" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MFGN" x="124.46" y="58.42" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="124.46" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$4" gate="G$1" x="124.46" y="43.18">
-<attribute name="NOTES" x="124.46" y="43.18" size="1.778" layer="96" display="off"/>
+<attribute name="MFGN" x="124.46" y="43.18" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="124.46" y="43.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1-PROG" gate="G$1" x="170.18" y="-20.32">
 <attribute name="MFGN" x="170.18" y="-20.32" size="1.778" layer="96" display="off"/>

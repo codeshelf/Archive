@@ -374,29 +374,29 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <package name="RF6555">
 <smd name="P$25" x="0" y="0" dx="3.2" dy="3.2" layer="1"/>
 <smd name="P$1" x="-2.2" y="2.2" dx="0.4" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.44" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
-<smd name="P$3" x="-0.72" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
-<smd name="P$5" x="0.72" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
-<smd name="P$6" x="1.44" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
-<smd name="P$7" x="2.2" y="2.2" dx="0.4" dy="0.4" layer="1" rot="R90"/>
-<smd name="P$8" x="2.2" y="1.4" dx="0.4" dy="0.32" layer="1" rot="R180"/>
-<smd name="P$9" x="2.2" y="0.72" dx="0.4" dy="0.32" layer="1" rot="R180"/>
-<smd name="P$10" x="2.2" y="0" dx="0.4" dy="0.32" layer="1" rot="R180"/>
-<smd name="P$11" x="2.2" y="-0.72" dx="0.4" dy="0.32" layer="1" rot="R180"/>
-<smd name="P$12" x="2.2" y="-1.44" dx="0.4" dy="0.32" layer="1" rot="R180"/>
+<smd name="P$24" x="-1.44" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
+<smd name="P$23" x="-0.72" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
+<smd name="P$22" x="0" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
+<smd name="P$21" x="0.72" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
+<smd name="P$20" x="1.44" y="2.2" dx="0.4" dy="0.32" layer="1" rot="R90"/>
+<smd name="P$19" x="2.2" y="2.2" dx="0.4" dy="0.4" layer="1" rot="R90"/>
+<smd name="P$18" x="2.2" y="1.4" dx="0.4" dy="0.32" layer="1" rot="R180"/>
+<smd name="P$17" x="2.2" y="0.72" dx="0.4" dy="0.32" layer="1" rot="R180"/>
+<smd name="P$16" x="2.2" y="0" dx="0.4" dy="0.32" layer="1" rot="R180"/>
+<smd name="P$15" x="2.2" y="-0.72" dx="0.4" dy="0.32" layer="1" rot="R180"/>
+<smd name="P$14" x="2.2" y="-1.44" dx="0.4" dy="0.32" layer="1" rot="R180"/>
 <smd name="P$13" x="2.2" y="-2.2" dx="0.4" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$14" x="1.44" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
-<smd name="P$15" x="0.72" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
-<smd name="P$16" x="0" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
-<smd name="P$17" x="-0.72" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
-<smd name="P$18" x="-1.44" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
-<smd name="P$19" x="-2.2" y="-2.2" dx="0.4" dy="0.4" layer="1" rot="R270"/>
-<smd name="P$20" x="-2.2" y="-1.44" dx="0.4" dy="0.32" layer="1"/>
-<smd name="P$21" x="-2.2" y="-0.72" dx="0.4" dy="0.32" layer="1"/>
-<smd name="P$22" x="-2.2" y="0" dx="0.4" dy="0.32" layer="1"/>
-<smd name="P$23" x="-2.2" y="0.72" dx="0.4" dy="0.32" layer="1"/>
-<smd name="P$24" x="-2.2" y="1.44" dx="0.4" dy="0.32" layer="1"/>
+<smd name="P$12" x="1.44" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
+<smd name="P$11" x="0.72" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
+<smd name="P$10" x="0" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
+<smd name="P$9" x="-0.72" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
+<smd name="P$8" x="-1.44" y="-2.2" dx="0.4" dy="0.32" layer="1" rot="R270"/>
+<smd name="P$7" x="-2.2" y="-2.2" dx="0.4" dy="0.4" layer="1" rot="R270"/>
+<smd name="P$6" x="-2.2" y="-1.44" dx="0.4" dy="0.32" layer="1"/>
+<smd name="P$5" x="-2.2" y="-0.72" dx="0.4" dy="0.32" layer="1"/>
+<smd name="P$4" x="-2.2" y="0" dx="0.4" dy="0.32" layer="1"/>
+<smd name="P$3" x="-2.2" y="0.72" dx="0.4" dy="0.32" layer="1"/>
+<smd name="P$2" x="-2.2" y="1.44" dx="0.4" dy="0.32" layer="1"/>
 </package>
 <package name="MMCX_VERT">
 <smd name="P$1" x="0" y="0" dx="0.89" dy="0.89" layer="1" roundness="100"/>
@@ -404,6 +404,26 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <smd name="P$3" x="1.32" y="1.32" dx="0.94" dy="0.94" layer="1"/>
 <smd name="P$4" x="1.32" y="-1.32" dx="0.94" dy="0.94" layer="1"/>
 <smd name="P$5" x="-1.32" y="-1.32" dx="0.94" dy="0.94" layer="1"/>
+</package>
+<package name="F_ANT_RFMD">
+<wire x1="-3.0861" y1="-1.27" x2="-3.0861" y2="-5.08" width="0" layer="1"/>
+<wire x1="0.523240625" y1="53.04281875" x2="0.62991875" y2="53.202840625" width="0" layer="1"/>
+<wire x1="0.281940625" y1="54.8005" x2="0.2032" y2="54.917340625" width="0" layer="1"/>
+<wire x1="0.08381875" y1="54.99608125" x2="-0.053340625" y2="55.02401875" width="0" layer="1"/>
+<wire x1="-3.9116" y1="2.6797" x2="0.5842" y2="2.6797" width="0.332740625" layer="1"/>
+<rectangle x1="-3.749040625" y1="-4.75488125" x2="2.473959375" y2="-1.75768125" layer="1"/>
+<rectangle x1="2.20471875" y1="-4.7371" x2="4.70408125" y2="19.0627" layer="1"/>
+<rectangle x1="-2.67843125" y1="2.24155" x2="3.84683125" y2="3.09245" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="-3.787140625" y="2.5146"/>
+<vertex x="-3.787140625" y="2.8448"/>
+<vertex x="-2.669540625" y="3.0988"/>
+<vertex x="-2.161540625" y="3.0988"/>
+<vertex x="-2.161540625" y="2.2352"/>
+<vertex x="-2.669540625" y="2.2352"/>
+</polygon>
+<smd name="P$1" x="-3.911540625" y="2.680040625" dx="0.332740625" dy="0.332740625" layer="1" roundness="100"/>
+<smd name="P$2" x="-3.4036" y="-3.302" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -516,6 +536,13 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/2535S.pdf</description
 <pin name="P$1" x="-15.24" y="0" length="middle"/>
 <wire x1="-10.16" y1="0" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="F-ANTENNA">
+<wire x1="0" y1="0" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="IN" x="0" y="-5.08" length="middle" rot="R90"/>
+<pin name="GND" x="7.62" y="5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -710,6 +737,23 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc3500.pdf</descripti
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 <connect gate="G$1" pin="P$4" pad="P$4"/>
 <connect gate="G$1" pin="P$5" pad="P$5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="F-ANTENNA">
+<description>PCB-base F-Antenna</description>
+<gates>
+<gate name="G$1" symbol="F-ANTENNA" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="F_ANT_RFMD">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="IN" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1224,46 +1268,6 @@ type 0207, grid 7.5 mm</description>
 <smd name="P$1" x="-0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
 <smd name="P$2" x="0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
 </package>
-<package name="F-ANTENNA-4LAYER-TOP">
-<smd name="IN" x="0" y="1" dx="0.2" dy="0.16" layer="1"/>
-<smd name="GND" x="6" y="0" dx="0.2" dy="0.16" layer="1"/>
-<rectangle x1="4.5" y1="-0.5" x2="7.5" y2="7.3" layer="1"/>
-<rectangle x1="-17" y1="4.8" x2="7.5" y2="7.3" layer="1"/>
-<rectangle x1="-0.4" y1="0.5" x2="0.45" y2="4.8" layer="1"/>
-</package>
-<package name="F-ANTENNA-4LAYER-BOT">
-<smd name="IN" x="0" y="1" dx="0.2" dy="0.16" layer="16" rot="R180"/>
-<smd name="GND" x="6" y="0" dx="0.2" dy="0.16" layer="16" rot="R180"/>
-<rectangle x1="4.5" y1="-0.5" x2="7.5" y2="7.3" layer="16" rot="R180"/>
-<rectangle x1="-17" y1="4.8" x2="7.5" y2="7.3" layer="16" rot="R180"/>
-<rectangle x1="-0.4" y1="0.5" x2="0.45" y2="4.8" layer="16" rot="R180"/>
-</package>
-<package name="F-ANTENNA-2LAYER-TOP">
-<smd name="IN" x="0" y="0.5" dx="1" dy="1" layer="1"/>
-<smd name="GND" x="-6" y="0.5" dx="1" dy="1" layer="1"/>
-<rectangle x1="-7.4" y1="0" x2="-4.15" y2="7.1" layer="1"/>
-<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="1"/>
-<rectangle x1="-0.5" y1="0" x2="0.6" y2="7.1" layer="1"/>
-<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="1"/>
-</package>
-<package name="F-ANTENNA-2LAYER-BOT">
-<smd name="IN" x="0" y="0.5" dx="1" dy="1" layer="16"/>
-<smd name="GND" x="-6" y="0.5" dx="1" dy="1" layer="16"/>
-<rectangle x1="-7.4" y1="0" x2="-4.15" y2="7.1" layer="16"/>
-<rectangle x1="-7.4" y1="4.4" x2="16.6" y2="7.15" layer="16"/>
-<rectangle x1="-0.5" y1="0" x2="0.6" y2="7.1" layer="16"/>
-</package>
-<package name="F-ANTENNA-2LAYER-BOTH">
-<pad name="IN2" x="0" y="0" drill="0.2"/>
-<smd name="IN" x="-0.1" y="0" dx="1" dy="1" layer="1"/>
-<smd name="GND" x="-6.1" y="0" dx="1" dy="1" layer="1"/>
-<rectangle x1="-7.5" y1="-0.5" x2="-4.25" y2="6.6" layer="1"/>
-<rectangle x1="-7.5" y1="3.9" x2="16.5" y2="6.65" layer="1"/>
-<rectangle x1="-0.6" y1="-0.5" x2="0.5" y2="6.6" layer="1"/>
-<rectangle x1="-7.5" y1="3.9" x2="16.5" y2="6.65" layer="16" rot="R180"/>
-<rectangle x1="-7.5" y1="-0.5" x2="-4.25" y2="6.6" layer="16" rot="R180"/>
-<rectangle x1="-0.6" y1="-0.5" x2="0.5" y2="6.6" layer="16" rot="R180"/>
-</package>
 </packages>
 <symbols>
 <symbol name="CAPACITOR">
@@ -1299,13 +1303,6 @@ type 0207, grid 7.5 mm</description>
 <text x="-2.794" y="-1.27" size="1.778" layer="95" font="vector" rot="R90">&gt;Name</text>
 <pin name="1" x="0" y="10.16" visible="off" length="middle" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
-</symbol>
-<symbol name="F-ANTENNA">
-<wire x1="0" y1="0" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
-<pin name="IN" x="0" y="-5.08" length="middle" rot="R90"/>
-<pin name="GND" x="7.62" y="5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1432,59 +1429,6 @@ type 0207, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="F-ANTENNA">
-<description>PCB-base F-Antenna</description>
-<gates>
-<gate name="G$1" symbol="F-ANTENNA" x="0" y="5.08"/>
-</gates>
-<devices>
-<device name="-4LTOP" package="F-ANTENNA-4LAYER-TOP">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-4LBOT" package="F-ANTENNA-4LAYER-BOT">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2LTOP" package="F-ANTENNA-2LAYER-TOP">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2LBOT" package="F-ANTENNA-2LAYER-BOT">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-2LBOTH" package="F-ANTENNA-2LAYER-BOTH">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="IN" pad="IN"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1582,7 +1526,7 @@ type 0207, grid 7.5 mm</description>
 <part name="C$24" library="GW-devices" deviceset="RF-C" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="GW-devices" deviceset="F-ANTENNA" device="-4LTOP"/>
+<part name="U$4" library="KW2" deviceset="F-ANTENNA" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="U$5" library="KW2" deviceset="MMCX_VERT" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
