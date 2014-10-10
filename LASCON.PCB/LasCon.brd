@@ -511,7 +511,7 @@ design rules under a new name.</description>
 <element name="U$3" library="GW-devices" package="SO14" value="WS2801" x="0" y="-23.9" rot="R270"/>
 <element name="IC1" library="microchip" package="SOT223" value="" x="-0.15" y="-23.1" rot="MR180">
 <attribute name="OC_NEWARK" value="" x="36.68" y="-4.05" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="MCP1804T-3302I" x="36.68" y="-4.05" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="MCP1804T-3302I/DB" x="36.68" y="-4.05" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="36.68" y="-4.05" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="" x="36.68" y="-4.05" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
@@ -519,8 +519,14 @@ design rules under a new name.</description>
 <element name="U$5" library="GW-devices" package="RF-C0805" value="24" x="-6.3" y="-25.2"/>
 <element name="U$6" library="GW-devices" package="LASER" value="LASER" x="0" y="-5" rot="MR180"/>
 <element name="U$7" library="GW-devices" package="LASER" value="LASER" x="0" y="-13.75" rot="MR180"/>
-<element name="U$8" library="GW-devices" package="90DEGMNT" value="90DEGMNT" x="-13" y="-13.5"/>
-<element name="U$9" library="GW-devices" package="90DEGMNT" value="90DEGMNT" x="13" y="-13.5" rot="R180"/>
+<element name="U$8" library="GW-devices" package="90DEGMNT" value="90DEGMNT" x="-13" y="-13.5">
+<attribute name="MFGN" value="Keystone Electronics" x="-13" y="-13.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFGP" value="7774" x="-13" y="-13.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$9" library="GW-devices" package="90DEGMNT" value="90DEGMNT" x="13" y="-13.5" rot="R180">
+<attribute name="MFGN" value="Keystone Electronics" x="13" y="-13.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFGP" value="7774" x="13" y="-13.5" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="U$10" library="GW-devices" package="C0805" value="" x="0.05" y="-30" rot="R180"/>
 <element name="U$11" library="GW-devices" package="LASER" value="LASER" x="0" y="3.75" rot="MR180"/>
 <element name="U$12" library="GW-devices" package="RF-C0805" value="24" x="-6.25" y="-27.85"/>

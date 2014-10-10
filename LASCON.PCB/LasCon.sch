@@ -832,7 +832,9 @@ Based on the following sources :
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="IC1" library="microchip" deviceset="MCP1804T-3302I" device=""/>
+<part name="IC1" library="microchip" deviceset="MCP1804T-3302I" device="">
+<attribute name="MPN" value="MCP1804T-3302I/DB"/>
+</part>
 <part name="U$4" library="GW-devices" deviceset="RF-R" device="0805" value="24"/>
 <part name="U$5" library="GW-devices" deviceset="RF-R" device="0805" value="24"/>
 <part name="U$6" library="GW-devices" deviceset="LASER" device=""/>
@@ -840,8 +842,14 @@ Based on the following sources :
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
-<part name="U$8" library="GW-devices" deviceset="90DEGMNT" device=""/>
-<part name="U$9" library="GW-devices" deviceset="90DEGMNT" device=""/>
+<part name="U$8" library="GW-devices" deviceset="90DEGMNT" device="">
+<attribute name="MFGN" value="Keystone Electronics"/>
+<attribute name="MFGP" value="7774"/>
+</part>
+<part name="U$9" library="GW-devices" deviceset="90DEGMNT" device="">
+<attribute name="MFGN" value="Keystone Electronics"/>
+<attribute name="MFGP" value="7774"/>
+</part>
 <part name="U$10" library="GW-devices" deviceset="RF-C" device="0805"/>
 <part name="U$11" library="GW-devices" deviceset="LASER" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -872,8 +880,14 @@ Based on the following sources :
 <instance part="+3V1" gate="G$1" x="38.1" y="10.16"/>
 <instance part="+3V2" gate="G$1" x="71.12" y="-33.02"/>
 <instance part="+3V3" gate="G$1" x="99.06" y="-30.48"/>
-<instance part="U$8" gate="G$1" x="-60.96" y="-53.34"/>
-<instance part="U$9" gate="G$1" x="119.38" y="-53.34"/>
+<instance part="U$8" gate="G$1" x="-60.96" y="-53.34">
+<attribute name="MFGN" x="-60.96" y="-53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="-60.96" y="-53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$9" gate="G$1" x="119.38" y="-53.34">
+<attribute name="MFGN" x="119.38" y="-53.34" size="1.778" layer="96" display="off"/>
+<attribute name="MFGP" x="119.38" y="-53.34" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$10" gate="G$1" x="25.4" y="5.08" rot="R270"/>
 <instance part="U$11" gate="G$1" x="40.64" y="-58.42" rot="R270"/>
 <instance part="+3V4" gate="G$1" x="45.72" y="-33.02"/>
