@@ -341,14 +341,18 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zilog.lbr"
-UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/GW-devices.lbr"
+UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Eagle Libraries/KW2.lbr"
+UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Eagle Libraries/GW-devices.lbr"
+UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Eagle Libraries/adafruit.lbr"
+UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Eagle Libraries/supply1.lbr"
+UsedLibrary="C:/Users/Rafael Send/Documents/GitHub/CAD/Eagle Libraries/ZIGBEE.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1482 12 2081 411"
-State=1
+Loc="1676 145 2275 544"
+State=3
 Number=0
 
 [Desktop]
-Screen="3200 1080"
+Screen="1280 800"
 Window="Win_1"
