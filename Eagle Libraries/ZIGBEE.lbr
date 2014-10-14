@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mic" unit="mic" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -214,7 +214,6 @@
 <text x="1.7875" y="9.1725" size="1.016" layer="25" font="vector">&gt;Name</text>
 <text x="1.5375" y="-1.9825" size="0.6096" layer="27" font="vector">&gt;Value</text>
 <polygon width="0.0127" layer="1">
-<vertex x="2.800265625" y="6.790528125"/>
 <vertex x="2.800265625" y="5.2013"/>
 <vertex x="5.205884375" y="5.2013"/>
 <vertex x="5.205884375" y="6.79729375"/>
@@ -223,7 +222,6 @@
 <vertex x="3.26609375" y="6.423696875"/>
 <vertex x="3.26609375" y="6.796528125"/>
 <vertex x="2.800053125" y="6.796528125"/>
-<vertex x="2.800053125" y="6.79118125"/>
 </polygon>
 <polygon width="0.0127" layer="1">
 <vertex x="2.729765625" y="1.283515625"/>
