@@ -33315,7 +33315,16 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="RF-L0201">
+<device name="0201" package="RF-L0201">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="RFMD0402">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -33368,7 +33377,16 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="RFMD0402">
+<device name="RFMD" package="RFMD0402">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="RF-L0201">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -33427,6 +33445,24 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RFMD" package="RFMD0402">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="RF-L0201">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
