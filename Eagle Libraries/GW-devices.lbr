@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="GRB2" color="13" fill="10" visible="no" active="yes"/>
+<layer number="2" name="GRB2" color="13" fill="10" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -27996,9 +27996,9 @@ Metric Code Size 3225</description>
 <wire x1="6.2" y1="-6.2" x2="-6.2" y2="-6.2" width="0.127" layer="21"/>
 <wire x1="-6.2" y1="-6.2" x2="-6.2" y2="6.2" width="0.127" layer="21"/>
 <pad name="P$1" x="-3.81" y="-3.81" drill="1.22"/>
-<pad name="P$3" x="1.27" y="1.27" drill="1.22"/>
+<pad name="P$3" x="1.27" y="1.27" drill="1.22" thermals="no"/>
 <pad name="P$2" x="-1.27" y="3.81" drill="1.22"/>
-<pad name="P$4" x="3.81" y="-3.81" drill="1.22"/>
+<pad name="P$4" x="3.81" y="-3.81" drill="1.22" thermals="no"/>
 <text x="-3.3" y="6.9" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="SWITCH-TACTILE-FSM">
@@ -28292,6 +28292,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <package name="RFMD0402">
 <smd name="P$1" x="-0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
 <smd name="P$2" x="0.4445" y="0" dx="0.599946875" dy="0.47498125" layer="1" rot="R90"/>
+<text x="-1.27" y="1.27" size="0.4064" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
