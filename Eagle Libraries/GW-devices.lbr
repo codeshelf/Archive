@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="GRB2" color="13" fill="10" visible="yes" active="yes"/>
@@ -32207,6 +32207,29 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <wire x1="-5" y1="1" x2="-5" y2="-1" width="0.254" layer="94"/>
 <wire x1="-5" y1="-1" x2="-4" y2="-1" width="0.254" layer="94"/>
 </symbol>
+<symbol name="MC9S08SH8CTG">
+<wire x1="-20.32" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<pin name="PTA5/RESET" x="-25.4" y="17.78" length="middle"/>
+<pin name="PTA4/BDM" x="-25.4" y="12.7" length="middle"/>
+<pin name="VDD" x="-25.4" y="7.62" length="middle"/>
+<pin name="VSS" x="-25.4" y="2.54" length="middle"/>
+<pin name="PTB7/SCL" x="-25.4" y="-2.54" length="middle"/>
+<pin name="PTB6/SDA" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PTB5" x="-25.4" y="-12.7" length="middle"/>
+<pin name="PTB4" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PTB3" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PTB2" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PTB1/TX" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PTB0/RX" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PTA3" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PTA2" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PTA1" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PTA0" x="25.4" y="17.78" length="middle" rot="R180"/>
+<text x="0" y="15.24" size="1.778" layer="97">-SH</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MC9S08GT60CFB">
@@ -35664,6 +35687,36 @@ MFG part number 54602-908lf</description>
 </gates>
 <devices>
 <device name="" package="90DEGMNT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC9S08SH8CTG">
+<gates>
+<gate name="G$1" symbol="MC9S08SH8CTG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="PTA0" pad="16"/>
+<connect gate="G$1" pin="PTA1" pad="15"/>
+<connect gate="G$1" pin="PTA2" pad="14"/>
+<connect gate="G$1" pin="PTA3" pad="13"/>
+<connect gate="G$1" pin="PTA4/BDM" pad="2"/>
+<connect gate="G$1" pin="PTA5/RESET" pad="1"/>
+<connect gate="G$1" pin="PTB0/RX" pad="12"/>
+<connect gate="G$1" pin="PTB1/TX" pad="11"/>
+<connect gate="G$1" pin="PTB2" pad="10"/>
+<connect gate="G$1" pin="PTB3" pad="9"/>
+<connect gate="G$1" pin="PTB4" pad="8"/>
+<connect gate="G$1" pin="PTB5" pad="7"/>
+<connect gate="G$1" pin="PTB6/SDA" pad="6"/>
+<connect gate="G$1" pin="PTB7/SCL" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
